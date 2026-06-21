@@ -1,120 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>AllBKS LLC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALLBKS LLC</title>
+
 <style>
+
 body{
 margin:0;
-font-family:Arial;
-background:#08182f;
+font-family:Arial,sans-serif;
+background:#050505;
 color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 8%;
+background:#000;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:34px;
+font-weight:bold;
+color:#D4AF37;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-size:18px;
+}
+
+.hero{
+padding:120px 10%;
 text-align:center;
+background:linear-gradient(to right,#020202,#08182f);
 }
 
-header{
-padding:100px 20px;
-background:linear-gradient(#08182f,#0d2d56);
+.hero h1{
+font-size:70px;
+color:#D4AF37;
+margin-bottom:10px;
 }
 
-h1{
-font-size:60px;
-color:#d4af37;
+.hero h2{
+font-size:55px;
 }
 
-h2{
-font-size:32px;
-}
-
-p{
-font-size:20px;
+.hero p{
+font-size:24px;
+color:#ddd;
+max-width:1000px;
+margin:auto;
 }
 
 .button{
-background:#d4af37;
-padding:15px 30px;
+background:#D4AF37;
 color:black;
+padding:18px 40px;
+font-size:20px;
+border-radius:8px;
 text-decoration:none;
-border-radius:10px;
-font-weight:bold;
+display:inline-block;
+margin-top:30px;
 }
 
-section{
-padding:50px;
+.section{
+padding:100px 10%;
+}
+
+.section h2{
+font-size:50px;
+color:#D4AF37;
+text-align:center;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:60px;
 }
 
 .card{
-background:#102a4c;
-padding:20px;
-margin:20px;
-border-radius:20px;
+background:#111;
+padding:40px;
+width:300px;
+border-radius:15px;
+text-align:center;
 }
+
+footer{
+background:#000;
+padding:60px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:45px;
+}
+
+.hero h2{
+font-size:30px;
+}
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
+<nav>
+<div class="logo">ALLBKS LLC</div>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+
 <h1>ALLBKS LLC</h1>
 
-<h2>Impulsamos tu negocio. Conectamos oportunidades.</h2>
+<h2>Integrated Solutions for Growth Without Limits</h2>
 
 <p>
-Soluciones integrales en comercio electrónico, Amazon FBA,
-abastecimiento, logística y crecimiento empresarial.
+Helping businesses and entrepreneurs expand through strategic logistics, distribution, import & export, and international growth solutions.
 </p>
 
-<br>
-
-<a class="button"
-href="https://wa.me/13059425508">
-WhatsApp
+<a class="button" href="https://wa.me/13059425508">
+Contact Us
 </a>
 
-</header>
+</section>
 
-<section>
+<section class="section">
 
-<h2>Nuestros Servicios</h2>
+<h2>Our Services</h2>
+
+<div class="cards">
 
 <div class="card">
-<h3>Comercio Electrónico</h3>
+<h3>Logistics & Distribution</h3>
+<p>Reliable and efficient solutions.</p>
 </div>
 
 <div class="card">
-<h3>Amazon FBA</h3>
+<h3>Import & Export</h3>
+<p>Connecting businesses worldwide.</p>
 </div>
 
 <div class="card">
-<h3>Product Sourcing</h3>
+<h3>International Expansion</h3>
+<p>Growing beyond borders.</p>
 </div>
 
-<div class="card">
-<h3>Logística y Distribución</h3>
-</div>
-
-<div class="card">
-<h3>Consultoría Empresarial</h3>
-</div>
-
-<div class="card">
-<h3>Expansión Internacional</h3>
 </div>
 
 </section>
 
-<section>
+<footer>
 
-<h2>Contacto</h2>
+<h2>ALLBKS LLC</h2>
 
-<p>
-sales@allbks.com
-</p>
+<p>Miami, Florida, USA</p>
 
-<p>
-+1 (305) 942-5508
-</p>
+<p>sales@allbks.com</p>
 
-</section>
+<p>+1 (305) 942-5508</p>
+
+</footer>
 
 </body>
 </html>
+
+
+
